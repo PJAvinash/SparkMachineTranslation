@@ -11,6 +11,10 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-mllib" % sparkVersion,
   "org.apache.hadoop" % "hadoop-client" % sparkVersion,
   "org.tensorflow" % "tensorflow" % "1.15.0",
+  "com.johnsnowlabs.nlp" %% "spark-nlp-gpu" % "5.3.3",
+  "com.johnsnowlabs.nlp" %% "spark-nlp-aarch64" % "5.3.3",
+  "com.johnsnowlabs.nlp" %% "spark-nlp" % "5.3.3",
+
 )
 // Package configuration
 // addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "1.1.0")

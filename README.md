@@ -32,6 +32,15 @@ Language translation is the process of converting text from one language to anot
 - - Normalizer with L1 norm is used to convert token frequencies
 - These vectors are fed into Multilayer Perceptron model in Spark ML lib [Input Dimension = Buckenting dimension , Output Dimension = NUMBER OF SUPPORTED LANGUAGES + 1]
 - - Here I used UNKOWN as a code for languges that come outside the choice of supported languages 
+**Hyperparameter tuning** 
+```
+val HashingDimension = 2048
+setStepSize(0.05).setSeed(1234L).setMaxIter(1000) 
+
+\\for tokenizations
+Windowsize = 6, 
+Stride = 3
+```
 
 ## Language translation workflow 
 - Use the stored/ existing language detection model 
@@ -76,8 +85,15 @@ spark-submit <parent directory>/SparkMachineTranslation/project/target/scala-2.1
 - https://github.com/eaplatanios/tensorflow_scala
 
 
-
-
 ## Contributors
 - PJ Avinash
+
+## Remarks 
+This Project's main goal to demonstrate for those who would like to design large scala data processing systems that require NLP in the pipeline. You can start picking ideas from here.
+
+
+## Acknowledgment
+We acknowledge the Apache Spark community for providing the powerful framework that enables scalable machine translation and language processing tasks, As well as JohnSnowLabs for supporting start of the art NLP techniques in such a widely use distribute processing framework. 
+
+Also, my NLP instructor Prof. Tatiana Erekhinskaya for allowing me to go though this challenge!
 
