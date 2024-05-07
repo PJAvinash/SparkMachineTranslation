@@ -83,6 +83,8 @@ spark-submit <parent directory>/SparkMachineTranslation/project/target/scala-2.1
 - https://www.scaler.com/topics/tensorflow/tensorflow-transformer/
 - https://fasttext.cc/docs/en/crawl-vectors.html
 - https://github.com/eaplatanios/tensorflow_scala
+- https://sparknlp.org/api/com/johnsnowlabs/nlp/annotators/seq2seq/MarianTransformer
+
 
 
 ## Contributors
@@ -90,6 +92,11 @@ spark-submit <parent directory>/SparkMachineTranslation/project/target/scala-2.1
 
 ## Remarks 
 This Project's main goal to demonstrate for those who would like to design large scala data processing systems that require NLP in the pipeline. You can start picking ideas from here.
+
+## some challenges and results
+![Language Detection ](SparkMachineTranslation/project/Results/LangDetect.png)
+![Fails with JVM heap memory load(2Core machine)](SparkMachineTranslation/project/Results/FailsAft1hr.png)
+
 
 
 ## Acknowledgment
