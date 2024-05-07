@@ -94,7 +94,7 @@ spark-submit <parent directory>/SparkMachineTranslation/project/target/scala-2.1
 
 
 ## Acknowledgment
-We acknowledge the Apache Spark community for providing the powerful framework that enables scalable machine translation and language processing tasks, As well as JohnSnowLabs for supporting start of the art NLP techniques in such a widely use distribute processing framework. 
+We acknowledge the Apache Spark community for providing the powerful framework that enables scalable machine translation and language processing tasks, As well as JohnSnowLabs for supporting state of the art NLP techniques in such a widely used distribute processing framework in the industry. 
 
 Also, my NLP instructor Prof. Tatiana Erekhinskaya for allowing me to go though this challenge!
 
