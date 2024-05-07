@@ -86,17 +86,11 @@ spark-submit <parent directory>/SparkMachineTranslation/project/target/scala-2.1
 - https://sparknlp.org/api/com/johnsnowlabs/nlp/annotators/seq2seq/MarianTransformer
 
 
-
-## Contributors
-- PJ Avinash
-
-## Remarks 
-This Project's main goal to demonstrate for those who would like to design large scala data processing systems that require NLP in the pipeline. You can start picking ideas from here.
-
 ## some challenges and results
-![Language Detection ](SparkMachineTranslation/project/Results/LangDetect.png)
-![Fails with JVM heap memory load(2Core machine)](SparkMachineTranslation/project/Results/FailsAft1hr.png)
-
+- Yes
+![Fails with JVM heap memory load(2Core machine)](project/Results/LangDetect.png)
+- But ( Training required heavy compute)
+![Language Detection ](project/Results/FailsAft1hr.png)
 
 
 ## Acknowledgment
@@ -104,3 +98,9 @@ We acknowledge the Apache Spark community for providing the powerful framework t
 
 Also, my NLP instructor Prof. Tatiana Erekhinskaya for allowing me to go though this challenge!
 
+
+## Contributors
+- PJ Avinash
+
+## Remarks 
+This Project's main goal to demonstrate for those who would like to design large scala data processing systems that require NLP in the pipeline. You can start picking ideas from here.
