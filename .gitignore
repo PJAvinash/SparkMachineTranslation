@@ -1,2 +1,5 @@
 *.DS_store
-src/target/
+*.cache
+*.class
+project/src/target/
+project/target/

@@ -17,10 +17,10 @@ object MachineTranslation {
 
   def main(args: Array[String]):Unit = {
     val trainData = spark.read.parquet("SparkMachineTranslation/project/data/wili-2018/langdetection_train.parquet").repartition(8).localCheckpoint().cache
-    val model = LanguageDetection.trainMLP(trainDF,"Sentence","Label",2048,Array(256))
-    LanguageDetection.save(model,"SparkMachineTranslation/project/src/main/scala/cs6320/models/langdetect")
-
-    val loadedModel = LanguageDetection.load("SparkMachineTranslation/project/src/main/scala/cs6320/models/langdetect")
+    val model = LanguageDetection.trainMLP(trainData,"Sentence","Label",2048,Array(256))
+    LanguageDetection.save(model,"SparkMachineTranslation/project/models/langdetect")
+   
+    val loadedModel = LanguageDetection.load("SparkMachineTranslation/project/models/langdetect")
     val testData = spark.read.parquet("SparkMachineTranslation/project/data/wili-2018/langdetection_test.parquet").repartition(8).localCheckpoint().cache
     val accuracy = LanguageDetection.evaluateMLP(loadedModel,testData,"Sentence","Label")
     println(accuracy)
