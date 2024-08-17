@@ -101,6 +101,12 @@ Also, my NLP instructor Prof. Tatiana Erekhinskaya for allowing me to go though 
 
 ## Contributors
 - PJ Avinash
+- Akhila Petnikota
+
+## contact info
+- petnikotaakhila@gmail.com
+- avinashindian2.0@gmail.com
+
 
 ## Remarks 
 This Project's main goal to demonstrate for those who would like to design large scala data processing systems that require NLP in the pipeline. You can start picking ideas from here.

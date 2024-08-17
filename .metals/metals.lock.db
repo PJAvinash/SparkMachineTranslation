@@ -1,0 +1,6 @@
+#FileLock
+#Fri Aug 16 19:15:54 CDT 2024
+hostName=localhost
+id=1915db0d09df25c0ea4718cdbea6eb599f14db268d8
+method=file
+server=localhost\:63085
